@@ -32,6 +32,10 @@ public class Ejer6 {
 		if ( ((b * b) - (4 * a * c)) < 0 ) {
 			System.out.println("No tiene soluciones.");
 		}
+		else if (a == 0) {
+			x1 = -c / b;
+			System.out.println("Solucion: x = " + x1);
+		}
 		else {
 			x1 = ((-b + Math.sqrt((b * b) - (4 * a * c))) / (2 * a));
 			x2 = ((-b - Math.sqrt((b * b) - (4 * a * c))) / (2 * a));
