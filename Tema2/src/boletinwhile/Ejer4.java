@@ -32,11 +32,11 @@ public class Ejer4 {
 				if (num > 0) { 
 					sumaPositivos += num;
 				}
-				if (num < 0) { 
+				else if (num < 0) { 
 					sumaNegativos += num;
 					contadorNegativos++;
 				}
-				if (num == 0) {
+				else {
 					contadorCero++;
 				}
 				
