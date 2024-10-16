@@ -8,6 +8,7 @@ public class Ejer6 {
 			
 			// Declaramos la variable que recoge las alturas introducidas
 			double altura;
+			// Variable que recoge la altura más alta
 			double masalto = 0;
 			
 			// Creamos el Scanner
@@ -17,13 +18,15 @@ public class Ejer6 {
 			System.out.println("Introduzca la primera altura: ");
 			altura = reader.nextInt();
 			
-			// Vamos sumando con el while y detenemos cuando sea negativo
+			// Bucle hasta que la altura introducida sea -1
 			while (altura != -1) {
 				
+				// Si la altura es mayor al valor de masalto lo guardamos en masalto el valor
 				if (altura > masalto) {
 					masalto = altura;
 				}
-					
+				
+				// Volvemos a pedir la altura	
 				System.out.println("Introduzca la siguiente altura: ");
 				altura = reader.nextInt();
 				

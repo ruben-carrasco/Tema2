@@ -6,8 +6,9 @@ public class Ejer1 {
 
 		public static void main(String[] args) {
 			
-			// Declaramos las variables
+			// Declaramos la variable que recoge el numero
 			int num;
+			// Declaramos la variable que recoge la suma
 			int numSumado = 0;
 			
 			// Creamos el Scanner
@@ -20,7 +21,7 @@ public class Ejer1 {
 			// Vamos sumando con el while y detenemos cuando sea negativo
 			while (num >= 0) {
 				numSumado += num;
-				
+				// Pedimos de nuevo el numero
 				System.out.println("Introduzca el siguiente número: ");
 				num = reader.nextInt();
 				

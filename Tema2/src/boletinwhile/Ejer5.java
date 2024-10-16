@@ -22,20 +22,24 @@ public class Ejer5 {
 			System.out.println("Introduzca la primera edad: ");
 			edad = reader.nextInt();
 			
-			// Vamos sumando con el while y detenemos cuando sea negativo
+			// Creamos el bucle y detenemos cuando la edad sea negativa
 			while (edad > 0) {
+					// Sumamos 1 al contador de alumnos
 					numAlumnos++;
+					// Sumamos las edades
 					sumaEdades += edad;
+					// Si es mayor de edad sumamos 1 al contador de mayores de edad
 					if (edad >= 18) {
 						mayorEdad++;
 					}
-					
+				
+				// Pedimos de nuevo una edad
 				System.out.println("Introduzca el siguiente edad: ");
 				edad = reader.nextInt();
 				
 			}
 			
-			// Mostramos el resultado
+			// Mostramos los resultados
 			System.out.println("La suma de las edades es: " + sumaEdades);
 			
 			System.out.println("La media de las edades es: " + sumaEdades / numAlumnos);

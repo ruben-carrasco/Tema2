@@ -15,40 +15,40 @@ public class Ejer4 {
 			// Variable que recoge la cantidad de números negativos
 			int contadorNegativos = 0;
 			// Variable que recoge la cantidad de números para detener en 10
-			int contador = 1;
+			int contador = 0;
 			// Variable que recoge la cantidad de ceros
 			int contadorCero = 0;
 			
 			// Creamos el Scanner
 			Scanner reader = new Scanner(System.in);
-			
-			// Pedimos el número al usuario y lo guardamos en la variable
-			System.out.println("Introduzca un número: ");
-			num = reader.nextInt();
-			
-			// Vamos sumando con el while y detenemos cuando sea negativo
+					
+			// Creamos el bucle y detenemos cuando llegue a 10 el contador
 			while (contador < 10) {
+				// Pedimos el número y lo leemos
+				System.out.println("Introduzca un número: ");
+				num = reader.nextInt();
+				//Sumamos 1 al contador
 				contador++;
+				// Si el numero es positivo sumamos en sumaPositivos
 				if (num > 0) { 
 					sumaPositivos += num;
 				}
+				// Si el numero es negativo sumamos en sumaNegativos y contamos sumamos 1 al contador de negativos 
 				else if (num < 0) { 
 					sumaNegativos += num;
 					contadorNegativos++;
 				}
+				// Si es 0 sumamos 1 al contador de ceros
 				else {
 					contadorCero++;
 				}
 				
-				System.out.println("Introduzca el siguiente número: ");
-				num = reader.nextInt();
-				
 			}
 			
-			// Mostramos el resultado final
+			// Mostramos los resultados finales
 			System.out.println("La suma de los positivos es: " + sumaPositivos);
-			
-			System.out.println("La media de los negativos es: " + sumaNegativos / contadorNegativos);
+			// Si no introduce num negativos con el ternario decimos que no lo ha introducido
+			System.out.println(contadorNegativos == 0 ? "No has introducido números negativos" : "La media de los negativos es: " + sumaNegativos / contadorNegativos);
 			
 			System.out.println("Número de ceros: " + contadorCero);
 			
