@@ -11,7 +11,7 @@ public class Ejer7 {
 		// Creamos Scanner
 		Scanner reader = new Scanner(System.in);
 		
-		// Pedimos el número al usuario
+		// Pedimos el número al usuario y lo guardamos en la variable
 		System.out.println("Introduzca un número: ");
 		numero = reader.nextInt();
 		

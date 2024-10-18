@@ -24,7 +24,7 @@ public class Exer4 {
 		num = reader.nextInt();
 		
 		// We create the loop
-		while (num != rand || num != -1) {
+		while (num != rand && num != -1) {
 			if (num < rand) {
 				System.out.println("Random number is higher");
 			}
