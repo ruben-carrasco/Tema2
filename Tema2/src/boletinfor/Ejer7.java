@@ -28,19 +28,7 @@ public class Ejer7 {
 				}
 		}
 		
-		for (int i = num + 1; i < 9999999; i++) {
-			
-			if (num % i == 0) {
-				d2 = true;
-				break;
-			}
-			else {
-				d2 = false;
-				break;
-			}
-	}
-		
-		if (d1 && d2) { 
+		if (d1) { 
 			System.out.println("El número no es primo");
 		}
 		else {
