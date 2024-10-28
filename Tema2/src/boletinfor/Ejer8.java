@@ -22,10 +22,12 @@ public class Ejer8 {
 		System.out.println("Introduzca el número B: ");
 		b = reader.nextInt();
 		
+		// Si a es menor que b imprime los numeros desde a hasta b
 		if (a < b) {
 			for (int i = a; i <= b; i++) {
 				System.out.println(i);
 			}
+		// Si b es menor que a imprime los numeros desde b hasta a
 		} else {
 			for (int i = b; i <= a; i++) {
 				System.out.println(i);
