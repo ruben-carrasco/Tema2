@@ -19,7 +19,7 @@ public class Ejer1 {
 				System.out.println("Introduzca la medida de los lados: ");
 				n = reader.nextInt();
 				// Comprobamos que es mayor que 0, si lo es error = false y sale del bucle
-				assert n > 0 : "El numero debe ser mayor que 0";
+				assert n < 0 : "El numero debe ser mayor que 0";
 				error = false;
 				// Si es un numero menor que 0 imprime el mensaje del assert y repite el bucle
 			} catch (AssertionError e) {
